@@ -13,3 +13,56 @@
 }
 
 
+main {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100vh;
+  width: 100%;
+
+  .grid-layout {
+    width: 100%;
+     img {
+       object-fit: contain !important;
+     }
+  }
+
+  .age-calculator {
+    padding: 1.5rem;
+    text-align: left;
+    font-size: 1.5em;
+    width: 85%;
+    margin: 0 auto;
+
+    label {
+      display: block;
+      width: 100%;
+      padding: .5rem;
+      margin-bottom: .5rem;
+      font-weight: bold;
+    }
+
+    input {
+      width: 100%;
+      padding: .8rem;
+      border-radius: 16px;
+      border: 4px solid var(--midnight-blue);
+    }
+
+    i {
+      position: absolute;
+      top: 4.5rem;
+      right: 1.5rem;
+    }
+
+    .btn {
+      width: 100%;
+      padding: 1.5rem;
+      border-radius: 16px;
+      background-color: var(--dark-purple);
+      color: white;
+      margin: 1rem 0;
+      text-align: center;
+    }
+  }
+}
+

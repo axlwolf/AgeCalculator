@@ -3,24 +3,27 @@
 <head itemscope itemtype="http://schema.org/WebSite">
     <meta charset="utf-8"/>
     <meta http-equiv="x-ua-compatible" content="ie=edge"/>
-    <meta name="msapplication-tap-highlight" content="no"/>
+    <meta name="application-tap-highlight" content="no"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
-    <title>Roadmap Project: Testimonial Cards</title>
+    <title>Roadmap Project: Age Calculator</title>
     <link
             rel="stylesheet"
             href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
             integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
             crossorigin="anonymous"
+
     />
+    <link rel="stylesheet" href="https://unpkg.com/js-datepicker/dist/datepicker.min.css">
+
     <meta name="author" content=""/>
     <meta name="keywords" content=""/>
-    <meta name="description" content=""/>
+    <meta name="description" content="Create an age calculator using HTML, CSS, and JavaScript."/>
 
     <meta itemprop="name" content="Project"/>
     <meta
             itemprop="description"
-            content="Content description less than 200 characters"
+            content="Create an age calculator using HTML, CSS, and JavaScript."
     />
     <link type="text/plain" rel="author" href="humans.txt"/>
     <link rel="stylesheet" href="./css/app.css"/>
@@ -32,16 +35,33 @@
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage">
-    <!-- main start -->
+<!-- main start -->
 
-    <main role="main">
-        <section class="grid-layout">
-            <img src="https://placehold.co/600x400/000000/FFF" alt="">
-        </section>
-    </main>
+<main role="main">
+    <section class="grid-layout">
+        <img src="https://placehold.co/800x200/tomato/white?font=roboto&text=Age Calculator" alt=""/>
+    </section>
 
-    <!-- main end -->
+    <section class="age-calculator">
+        <form class="form">
+            <fieldset class="form-control">
+                <label for="calendar">Enter your birth date</label>
+                <input name="calendar" id="calendar" type="text" readonly>
+                <i class="far fa-calendar"></i>
+            </fieldset>
+            <fieldset class="form-control">
+                <button class="btn submit" type="submit">Caculate</button>
+            </fieldset>
+            <fieldset class="form-control">
+                <p class="show-age"></p>
+            </fieldset>
+        </form>
+    </section>
+</main>
 
-    <script type="text/javascript" src="../build/app.js"></script>
+<!-- main end -->
+
+<script src="https://unpkg.com/js-datepicker"></script>
+<script type="text/javascript" src="../build/app.js"></script>
 </body>
 </html>
